@@ -1,5 +1,5 @@
 # Build image
-FROM node:16-alpine AS build
+FROM node:18-alpine AS build
 
 # OS Dependencies
 RUN apk add --no-cache python3 make g++
@@ -11,7 +11,7 @@ COPY . /build
 RUN npm ci && npm run build && npm ci --omit=dev --ignore-scripts
 
 # Runtime image
-FROM node:16-alpine
+FROM node:18-alpine
 
 WORKDIR /app
 
