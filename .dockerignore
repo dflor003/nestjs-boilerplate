@@ -1,0 +1,15 @@
+# Exclude everything by default
+# to limit the size of the docker context
+/**/**
+
+# Only add in the things necessary for compilation
+!/src
+!package.json
+!package-lock.json
+!tsconfig.json
+!tsconfig.build.json
+!.npmrc
+
+# Add any additional included files here such as configuration
+# or data necessary for the app to run
+!app.yml
