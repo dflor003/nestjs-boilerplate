@@ -30,13 +30,13 @@ Please make sure you have the following before starting with this boilerplate:
 
 Install dependencies using NPM.
 
-```bash
+```sh
 $ npm install
 ```
 
 For managed service dependencies, add them to `docker-compose.yml` and then run the following to spin them up:
 
-```bash
+```sh
 $ docker compose up -d
 ```
 
@@ -44,7 +44,7 @@ $ docker compose up -d
 
 These are some useful commands as part of your dev workflow:
 
-```bash
+```console
 # Run the app
 $ npm start            # Same as below
 $ npm run start:dev    # Run app and restart on save
